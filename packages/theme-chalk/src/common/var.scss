@@ -1,0 +1,135 @@
+//transition
+$border-transitionBase:border-color .2s ease-in !default;  //cubic-bezier(.645,045,.355,1)
+$color-transitionBase:color .2s cubic-bezier(.645,045,.355,1) !default;
+
+//colors
+$color-white:#fff !default;
+$color-black:#000 !default;
+
+$color-primary:#108EE8 !default;
+$color-primary-light-7:mix($color-white,$color-primary,70%) !default;
+$color-primary-light-9:mix($color-white,$color-primary,90%) !default;
+
+$color-textPlaceholder:#c0c4cc !default;
+
+$color-info:#909090 !default;
+$color-success:#67caaa !default;
+$color-warning:#e6a222 !default;
+$color-danger:#f53c3c !default;
+
+$color-textPrimary: #303133 !default;
+$color-textSecondary: #909399 !default;
+$color-textPlaceholder: #c0c4cc !default;
+$color-textRegular:#555555 !default;
+
+//background
+$background-color:#108EE8 !default;
+$background-colorBase:#f5f7fa !default;
+
+// fonts
+$font-sizeBase:14px !default;
+$font-sizeSmall:13px !default;
+$font-sizeLarge:18px !default;
+$font-weightPrimary:400 !default;
+$font-weightMore:500 !default;
+
+
+// border
+$border-widthBase:1px !default;
+$border-styleBase:solid !default;
+$border-colorBase:#D9D9D9 !default;
+$border-color-light: #e4e7ed !default;
+$border-color-lighter: #ebeef5 !default;
+$border-colorHover:$color-textPlaceholder !default;
+$border-base:$border-widthBase $border-styleBase $border-colorBase !default;
+$border-radiusBase:4px !default;
+
+// disbaled base
+$disabled-fillBase:$background-colorBase !default;
+$disabled-colorBase:$color-textPlaceholder !default;
+$disabled-borderBase:$border-color-light !default;
+
+//button
+$button-fontSize:14px !default;
+$button-fontWeight:$font-weightPrimary !default;
+$button-borderRadius:$border-radiusBase !default;
+$button-paddingVertical:8px !default;
+$button-paddingHorizontal:8px !default;
+
+$button-primaryBorder:$color-primary !default;
+$button-primaryColor:$color-white !default;
+$button-primaryFill:$color-primary !default;
+
+$button-defaultFill:$color-white !default;
+$button-defaultBorder:$border-colorBase !default;
+$button-defaultColor:$color-textRegular !default;
+
+$button-disabledColor:$color-textPlaceholder !default;
+$button-disabledFill: $color-white !default;
+$button-disabledBorder: $border-color-lighter !default;
+
+
+$button-hoverPercent:20% !default;
+$button-active-shade-percent:10% !default;
+
+//input
+$input-fontSize:$font-sizeBase !default;
+$input-color:$color-textRegular !default;
+$input-width:220px !default;
+$input-height:32px !default;
+$input-fill:$color-white !default;
+$input-border:$border-base !default;
+$input-borderRadius:$border-radiusBase !default;
+$input-iconColor:$color-textPlaceholder !default;
+$input-placeholderColor:$color-textPlaceholder !default;
+
+$input-hoverBorder:$border-colorHover !default;
+$input-clear-hoverColor:$color-textSecondary !default;
+
+$input-focusBorder:$color-primary !default;
+$input-focusFill:$color-white !default;
+
+$input-medium-fontSize:14px !default;
+$input-medium-height:36px !default;
+
+$input-small-fontSize:13px !default;
+$input-small-height:32px !default;
+
+$input-mini-fontSize:12px !default;
+$input-mini-height:28px !default;
+
+$input-disabledFill:$disabled-fillBase !default;
+$input-disabledBorder:$disabled-borderBase !default;
+$input-disabledColor:$disabled-colorBase !default;
+$input-disabled-placeholderColor:$color-textPlaceholder !default;
+
+//tag
+$tag-padding: 0 10px !default;
+$tag-fill: rgba($color-primary, 0.10) !default;
+$tag-color: $color-primary !default;
+$tag-border: rgba($color-primary, 0.20) !default;
+$tag-font-size: 12px !default;
+$tag-border-radius: 4px !default;
+
+$tag-info-fill: rgba($color-info, 0.10) !default;
+$tag-info-border: rgba($color-info, 0.20) !default;
+$tag-info-color: $color-info !default;
+
+$tag-primary-fill: rgba($color-primary, 0.10) !default;
+$tag-primary-border: rgba($color-primary, 0.20) !default;
+$tag-primary-color: $color-primary !default;
+
+$tag-success-fill: rgba($color-success, 0.10) !default;
+$tag-success-border: rgba($color-success, 0.20) !default;
+$tag-success-color: $color-success !default;
+
+$tag-warning-fill: rgba($color-warning, 0.10) !default;
+$tag-warning-border: rgba($color-warning, 0.20) !default;
+$tag-warning-color: $color-warning !default;
+
+$tag-danger-fill: rgba($color-danger, 0.10) !default;
+$tag-danger-border: rgba($color-danger, 0.20) !default;
+$tag-danger-color: $color-danger !default;
+
+
+

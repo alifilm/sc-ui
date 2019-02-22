@@ -1,0 +1,182 @@
+@import 'common/var';
+
+@font-face{
+	font-family:'sc-icons';
+	src:url('../fonts/sc-icons.woff') format('woff'),
+	    url('../fonts/sc-icons.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal
+}
+
+[class^="sc-icon-"] ,[class*=" sc-icon-"]{
+	font-family: 'sc-icons' !important;
+	speak:none;
+	font-style:normal;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+
+  // 更好的字体渲染
+  -webkit-font-smoothing:antialiased;
+  -moz-osc-fot-smothing:grayscale;
+}
+
+.sc-icon-info:before { content: "\e61a"; }
+
+.sc-icon-error:before { content: "\e62c"; }
+
+.sc-icon-success:before { content: "\e62d"; }
+
+.sc-icon-warning:before { content: "\e62e"; }
+
+.sc-icon-question:before { content: "\e634"; }
+
+.sc-icon-back:before { content: "\e606"; }
+
+.sc-icon-arrow-left:before { content: "\e600"; }
+
+.sc-icon-arrow-down:before { content: "\e603"; }
+
+.sc-icon-arrow-right:before { content: "\e604"; }
+
+.sc-icon-arrow-up:before { content: "\e605"; }
+
+.sc-icon-caret-left:before { content: "\e60a"; }
+
+.sc-icon-caret-bottom:before { content: "\e60b"; }
+
+.sc-icon-caret-top:before { content: "\e60c"; }
+
+.sc-icon-caret-right:before { content: "\e60e"; }
+
+.sc-icon-d-arrow-left:before { content: "\e610"; }
+
+.sc-icon-d-arrow-right:before { content: "\e613"; }
+
+.sc-icon-minus:before { content: "\e621"; }
+
+.sc-icon-plus:before { content: "\e62b"; }
+
+.sc-icon-remove:before { content: "\e635"; }
+
+.sc-icon-circle-plus:before { content: "\e601"; }
+
+.sc-icon-remove-outline:before { content: "\e63c"; }
+
+.sc-icon-circle-plus-outline:before { content: "\e602"; }
+
+.sc-icon-close:before { content: "\e60f"; }
+
+.sc-icon-check:before { content: "\e611"; }
+
+.sc-icon-circle-close:before { content: "\e607"; }
+
+.sc-icon-circle-check:before { content: "\e639"; }
+
+.sc-icon-circle-close-outline:before { content: "\e609"; }
+
+.sc-icon-circle-check-outline:before { content: "\e63e"; }
+
+.sc-icon-zoom-out:before { content: "\e645"; }
+
+.sc-icon-zoom-in:before { content: "\e641"; }
+
+.sc-icon-d-caret:before { content: "\e615"; }
+
+.sc-icon-sort:before { content: "\e640"; }
+
+.sc-icon-sort-down:before { content: "\e630"; }
+
+.sc-icon-sort-up:before { content: "\e631"; }
+
+.sc-icon-tickets:before { content: "\e63f"; }
+
+.sc-icon-document:before { content: "\e614"; }
+
+.sc-icon-goods:before { content: "\e618"; }
+
+.sc-icon-sold-out:before { content: "\e63b"; }
+
+.sc-icon-news:before { content: "\e625"; }
+
+.sc-icon-message:before { content: "\e61b"; }
+
+.sc-icon-date:before { content: "\e608"; }
+
+.sc-icon-printer:before { content: "\e62f"; }
+
+.sc-icon-time:before { content: "\e642"; }
+
+.sc-icon-bell:before { content: "\e622"; }
+
+.sc-icon-mobile-phone:before { content: "\e624"; }
+
+.sc-icon-service:before { content: "\e63a"; }
+
+.sc-icon-view:before { content: "\e643"; }
+
+.sc-icon-menu:before { content: "\e620"; }
+
+.sc-icon-more:before { content: "\e646"; }
+
+.sc-icon-more-outline:before { content: "\e626"; }
+
+.sc-icon-star-on:before { content: "\e637"; }
+
+.sc-icon-star-off:before { content: "\e63d"; }
+
+.sc-icon-location:before { content: "\e61d"; }
+
+.sc-icon-location-outline:before { content: "\e61f"; }
+
+.sc-icon-phone:before { content: "\e627"; }
+
+.sc-icon-phone-outline:before { content: "\e628"; }
+
+.sc-icon-picture:before { content: "\e629"; }
+
+.sc-icon-picture-outline:before { content: "\e62a"; }
+
+.sc-icon-delete:before { content: "\e612"; }
+
+.sc-icon-search:before { content: "\e619"; }
+
+.sc-icon-edit:before { content: "\e61c"; }
+
+.sc-icon-edit-outline:before { content: "\e616"; }
+
+.sc-icon-rank:before { content: "\e632"; }
+
+.sc-icon-refresh:before { content: "\e633"; }
+
+.sc-icon-share:before { content: "\e636"; }
+
+.sc-icon-setting:before { content: "\e638"; }
+
+.sc-icon-upload:before { content: "\e60d"; }
+
+.sc-icon-upload2:before { content: "\e644"; }
+
+.sc-icon-download:before { content: "\e617"; }
+
+.sc-icon-loading:before { content: "\e61e"; }
+
+.sc-icon-loading {
+  animation: rotating 2s linear infinite;
+}
+
+.sc-icon--right {
+  margin-left: 5px;
+}
+.sc-icon--left {
+  margin-right: 5px;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

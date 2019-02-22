@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import "common/var";
+@import "mixin/button";
+@import "mixin/mixin";
+@import "mixin/utils";
+
+@include b(button){
+	display: inline-block;
+	line-height: 1;
+	white-space: nowrap;
+	cursor: pointer;
+	background: $button-defaultFill;
+	border: $border-base;
+	border-color: $button-defaultBorder;
+	color: $button-defaultColor;
+	-webkit-appearance: none;
+	text-align: center;
+	box-sizing: border-box;
+	outline: none;
+	margin: 0;
+	transition: .1s;
+	font-weight: $button-fontWeight;
+	@include utils-user-select(none);
+
+	@include button-size($button-paddingVertical, $button-paddingHorizontal, $button-fontSize, $button-borderRadius);
+
+	//设计的按钮暂无移入效果
+	&:hover,&:focus{
+		color:$color-primary;
+		border-color:$color-primary-light-7;
+		background-color:$color-primary-light-9;
+	}
+
+	@include when(plain){
+		&:hover,
+		&:focus{
+			background-color:$color-white;
+			border-color:$color-primary;
+			color:$color-primary;
+		}
+		&:active {
+	      background: $color-white;
+	      border-color: mix($color-black, $color-primary, $button-active-shade-percent);
+	      color: mix($color-black, $color-primary, $button-active-shade-percent);
+	      outline: none;
+	    }
+	}
+	
+	@include when(round){
+		border-radius:20px;
+		padding:8px 10px;
+	}
+
+	@include when(disabled){
+		&,
+		&:hover,
+		&focus {
+			color:$button-disabledColor;
+			cursor:not-allowed;
+			background-image:none;
+			background-color:$button-disabledFill;
+			border-color:$button-disabledBorder;
+		}
+
+		&.sc-button--text{
+			background-color: transparent;
+		}
+
+		&.is-plain{
+			&,
+			&:hover,
+			&:focus {
+				background-color:$button-disabledFill;
+				border-color:$button-disabledBorder;
+				color:$button-disabledColor;
+			}
+		}
+	}
+
+	@include m(primary){
+		@include button-variant($button-primaryColor,$button-primaryFill,$button-primaryBorder);
+	}
+}
