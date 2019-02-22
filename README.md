@@ -1,4 +1,4 @@
-# myq-vue2
+# sc-ui
 
 > a ui for sccfc 
 
